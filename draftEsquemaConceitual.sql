@@ -1,5 +1,10 @@
 =======================LBD=======================
 
+
+
+REMOVER VETANIMAIS E FAZER FK DOS DADOS NA TABELA DE ATENDIMENTOS
+
+
 --A clinica recebe diversos clientes e cada cliente pode ter vários animais.
 
 --C = Cliente 
