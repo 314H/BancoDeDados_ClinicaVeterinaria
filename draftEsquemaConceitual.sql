@@ -76,8 +76,8 @@ CREATE TABLE ATENDIMENTOS
 	CONSTRAINT PK_ATENDIMENTOS_CODATE PRIMARY KEY (cod_atendimento),
 	CONSTRAINT AK_ATENDIMENTOS_DATA_CRV UNIQUE (dataHora, crv),
 	CONSTRAINT AK_ATENDIMENTOS_DATA_CODPAC UNIQUE (dataHora, cod_paciente)
-	-- CONSTRAINT FK_ATENDIMENTOS_ANIMAIS (cod_paciente) REFERENCES ANIMAIS (cod_paciente)
-	-- CONSTRAINT FK_ATENDIMENTOS_VETERINARIOS crv_atendente REFERENCES VETERINARIOS (crv)
+	CONSTRAINT FK_ATENDIMENTOS_ANIMAIS (cod_paciente) REFERENCES ANIMAIS (cod_paciente)
+	CONSTRAINT FK_ATENDIMENTOS_VETERINARIOS crv_atendente REFERENCES VETERINARIOS (crv)
 )																					
 
 CREATE TABLE EXAMES
@@ -103,7 +103,35 @@ CREATE TABLE TIPOSEXAMES
 	CONSTRAINT FK_TIPO_EXAMES FOREIGN KEY (cod_exame) REFERENCES EXAMES (cod_exame)
 )
 
-
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (03899869057, 'Arthur', 'Maciel Gomes', 'arthur.maciel@edu.pucrs.br', DATE '2001-05-16', 'S', 'S');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (38703854921, 'Marina', 'Moreira', 'marina.moreira@edu.pucrs.br', DATE '1998-07-20', 'N', 'N');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (44966018020, 'Thaís', 'Fernandes', 'thais.fernandes@edu.pucrs.br', DATE '1998-12-11', 'N', 'S');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (15849236717, 'João', 'das Neves', 'joaostark@outlook.com', DATE '1919-12-25', 'S', 'N');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (56481397258, 'Daiane', 'Targânia', 'arthur.maciel@edu.pucrs.br', DATE '2001-05-16', 'S', 'S');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (38755102937, 'Gabriel', 'Moura', 'moura.gabriel@gmail.com', DATE '2000-08-28', 'S', 'N');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (88955063410, 'Alana', 'Fernandes', 'alaninha.fernandes@gmail.com', DATE '1975-02-19', 'N', 'S');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (35795140682, 'Camilla', 'Oliveira', 'camilla.oli98@hotmail.com', DATE '1998-07-21', 'S', 'S');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (68410315794, 'Giovanni', 'Madalozzo', 'madgio@yahoo.com.br', DATE '1996-05-11', 'N', 'N');
+\
+INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
+VALUES (23144824730, 'Arthur', 'Maciel Gomes', 'arthur.maciel@edu.pucrs.br', DATE '2001-05-16', 'S', 'S');
 
 
 
