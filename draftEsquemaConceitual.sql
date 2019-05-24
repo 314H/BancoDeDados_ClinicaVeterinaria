@@ -131,7 +131,8 @@ INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, ca
 VALUES (68410315794, 'Giovanni', 'Madalozzo', 'madgio@yahoo.com.br', DATE '1996-05-11', 'N', 'N');
 \
 INSERT INTO CLIENTES (cpf, nome, sobrenome, email, data_nascimento, convenio, cad_ativo)
-VALUES (23144824730, 'Arthur', 'Maciel Gomes', 'arthur.maciel@edu.pucrs.br', DATE '2001-05-16', 'S', 'S');
+VALUES (23144824730, 'Joana', 'Gomes', 'joana.gomes@gmail.com', DATE '2001-09-10', 'S', 'S');
+
 
 
 
